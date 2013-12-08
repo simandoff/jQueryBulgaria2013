@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>jQuery Bulgaria 2013 - Boris Simandoff</title>
+
+    <meta name="description" content="jQuery Buglaria 2013 - VRay Cloud">
+    <meta name="author" content="boris.simandoff@chaosgroup.com">
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="stylesheet" href="css/theme/jqbg.css" id="theme">
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+
+
+        <section data-background-size="contain" data-background="img/background-1.png" data-background-color="white">
+            <h1>jQuery Bulgaria</h1>
+            <h2>V-Ray Cloud</h2>
+            <p>Speaker <a href="mailto:simandoff@chaosgroup.com">Boris Simandoff</a> /
+               <a href="http://twitter.com/simandoff">@simandoff</a>
+            </p>
+        </section>
+
+
+        <section>
+            <h2>Content</h2>
+            <ul>
+                <li>What's V-Ray</li>
+                <li>V-Ray Cloud Design</li>
+                <li>JavaScript</li>
+                <li>Node.js</li>
+                <li>V-Ray Cloud Demo</li>
+                <li>Q&amp;A</li>
+            </ul>
+        </section>
+
+
+        <section data-background="#000">
+            <h2 style="color:white;opacity:0.7;margin-top:-3em">V-Ray</h2>
+            <script>
+                for (var i = 1; i < 15; i++) {
+                    document.write('<section data-background-transition="slide" data-background="img/wm-vray-' + i + '.jpg"></section>');
+                }
+            </script>
+            <section data-bacgrkound-transition="none" data-background="img/wm-vray-15.jpg">
+                <iframe style="box-shadow: 0px 0px 60px 20px #000" class="fragment zoom-in stretch" src="https://www.youtube.com/embed/RYPFY5OUzdk" frameborder="0" allowfullscreen></iframe>
+            </section>
+        </section>
+
+
+        <section>
+            <section>
+                <h2>V-Ray Cloud Design</h2>
+                <p>The question was how to open large C++ code to the Web</p>
+                <p>We needed well defined easy to use API</p>
+                <p></p>
+            </section>
+
+            <section >
+                <h3>PHP anybody ?</h3>
+                <p class="fragment zoom-in">
+                    <img class="stretch" src="img/ko-ne2.jpg" />
+                </p>
+            </section>
+
+            <section>
+                <h3>Python ?</h3>
+                <p class="fragment zoom-in">
+                    <span>awesomely slow....</span><br/>
+                    <img class="stretch" src="img/python-2.jpg" >
+                </p>
+            </section>
+
+            <section>
+                <h3>Ruby?</h3>
+                 <p>is cool... but no one was a Pro</p>
+            </section>
+
+            <section>
+                <h3>C++ ?</h3>
+                <p class="fragment zoom-in">
+                    <span>for Web, hmmm NO!</span><br/>
+                    <img class="stretch" src="img/ko-ne-1.jpg">
+                </p>
+            </section>
+
+            <section>
+                <h3>C# ?</h3>
+                <p>great platform</p>
+				<p>mostly on Windows, grr....</p>
+            </section>
+
+            <section>
+                <h1>Java?</h1>
+                <p class="fragment zoom-in">Not bad
+                <br/>Great web support
+                <br/>Runs everywhere</p>
+                <p class="fragment zoom-in">Problem: Java is groovy only in Groovy!</p>
+            </section>
+
+            <section>
+                <h1>JavaScript?</h1>
+                <p class="fragment zoom-in">
+                    <img src="img/snoop_dogg_last_supper.gif">
+                </p>
+            </section>
+        </section>
+
+
+        <section id="javascript">
+            <section>
+                <h2>Let's talk JavaScript</h2>
+                <p class="fragment zoom-in">
+                Designed in about 15 days by Brendan Eich,<br/> at Netscape, 1995 </p>
+                <p class="fragment zoom-in">
+                    Now runs everywhere<br/>
+                    <img style="padding: 1em; background: white;" src="img/browser_os_icons.png">
+                </p>
+            </section>
+
+            <section data-background="img/html5.png" data-background-size="contain" data-background-color="white" data-bacgrkound-transition="zoom">
+            </section>
+
+            <section>
+                <h2>JS not only in the Browser</h2>
+                <p>Node.js</p>
+                <p>MongoDB</p>
+                <p>Chrome Desktop Apps</p>
+                <p>Mobile JavaScript is getting faster</p>
+                <p>Node-WebKit, Brackets</p>
+                <p>asm.js</p>
+            </section>
+
+            <section>
+                <h2>Let's talk JavaScript</h2>
+                <img src="img/so-you-think-you-can-dance-season-5-finale-logo-2.jpg"/>
+            </section>
+
+            <section>
+                <h2>JavaScript</h2>
+                <ul>
+                    <li>Learn the language!</li>
+                    <li>Objects and Prototype </li>
+                    <li>Variable Scope</li>
+                    <li>Higher-Order Programming</li>
+                    <li>Understand "this"!</li>
+                    <li>Apply, Call, and Bind Methods are super awesome!</li>
+                    <li>";" is optional - but be careful!</li>                   
+                </ul>
+            </section>
+            <section>
+                <h2>Let's talk JavaScript</h2>
+                <p>Mind the "=="! Use "==="!</p>
+                <p class="fragment zoom-in">[,] + 1 + [[],[,]] + 0 => ? </p>
+                <p class="fragment zoom-in">'1,0' // WAT?</p>
+				<img class="fragment zoom-in" src="img/wat-7.png">
+            </section>
+        </section>
+
+
+        <section id="node">
+            <section class="ty">
+                <h2>Let's talk Node.js</h2>
+                <style>
+                    .ty table {border-collapse: collapse; border-spacing: 0; }
+                    .ty td {border: 1px solid #aaa; padding: 0.3em 0.3em; text-align: right;}
+					.ty p {font-size: 12px !important}
+                </style>
+                <table>
+                    <tbody><tr><td>L1 cache reference</td><td>0.5 ns</td></tr>
+                    <tr><td>Branch mispredict</td><td>5 ns</td></tr>
+                    <tr><td>L2 cache reference</td><td>7 ns</td></tr>
+                    <tr><td>Mutex lock/unlock</td><td>100 ns</td></tr>
+                    <tr><td>Send 2K bytes over 1 Gbps network</td><td>20,000 ns</td></tr>
+                    <tr><td>Read 1 MB sequentially from memory</td><td>250,000 ns</td></tr>
+                    <tr><td>Read 1 MB sequentially from network</td><td>10,000,000 ns</td></tr>
+                    <tr><td>Send packet CA->Netherlands->CA</td><td>150,000,000 ns</td></tr>
+                    </tbody>
+                </table>
+                <p>Source: Jeff Dean, Engineering All-Hands Meeting at Google</p>
+            </section>
+
+            <section>
+                <h2>Let's talk Node.js</h2>
+                <ul>
+                    <li>Open source</li>
+                    <li>Based on Google's V8</li>
+                    <li>Lightweight: 7MB static build</li>
+                    <li>Build for networking</li>
+                </ul>
+            </section>
+
+			<section>
+                <h2>Node.js is single threaded</h2>
+                <img src="img/wat-blah.gif">
+            </section>
+
+            <section>
+                <h2>but Node.js is</h2>
+                <ul>
+                    <li>FAST!</li>
+                    <li>Asynchronous I/O: Event loop, Pool of threads</li>
+                    <li>Dead-lock Free: No concurrency problems</li>
+                    <li>Multi-platform: Linux, Windows, OSX, FreeBSD</li>
+                    <li>One language for server and client</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>What is Node.js?</h2>
+                <pre><code data-trim data-noescape contenteditable class="javascript">
+require('http').createServer(
+    function(i, o) { o.end('Hi!') }
+).listen(1337)
+                </code></pre>
+            </section>
+
+            <section>
+                <h2>V-Ray SDK for Node.js</h2>
+	            <pre><code data-trim data-noescape contenteditable class="javascript">
+require('vray')
+  .VRayRenderer({mode:'GPU'})
+  .load('car.vrscene')
+  .start()
+  .on('imageReady', function(img) {
+     img.save('car.webp', this.close)
+  })
+				</code></pre>
+            </section>
+
+            <section>
+                <h2>V-Ray Cloud Live Demo</h2>
+            </section>
+        </section>
+
+
+        <section>
+            <section>
+                <h2 class="fade-out">V-Ray Cloud is possible because of...</h2>
+                <h2 class="fragment zoom-in">V-Ray, Node.js and WebSockets</h2>
+            </section>
+          
+            <section>
+                <h1>WebSockets</h1>
+                <h1 class="fragment zoom-in">Let's do it Live!</h1>
+            </section>
+        </section>
+
+
+        <section data-background-size="contain" data-background="img/background-1.png" data-background-color="white">
+            <h1>That's all<br/>I got!</h1>
+        </section>
+
+
+        <section data-background-size="contain" data-background="img/bg-end.jpg" data-background-color="white">
+            <h1 class="fragment zoom-in" style="zoom: 2.5;color:rgba(40,40,40,0.3)">Q&A</h1>
+        </section>
+    </div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+
+<script>
+    Reveal.initialize({
+        width: 900,
+        height: 675,
+        controls: true,
+        progress: true,
+        history: true,
+        keyboard: true,
+        touch: true,
+        overview: true,
+        center: true,
+        autoSlide: 0,
+        autoSlideStoppable: true,
+        mouseWheel: false,
+        minScale: 0.2,
+        maxScale: 1.8,
+        theme: 'jqbg', 
+        transition: 'default',
+        dependencies: [
+            { src: 'lib/js/classList.js', condition:function(){return !document.body.classList}},
+            { src: 'plugin/highlight/highlight.js', async: true, callback:function(){hljs.initHighlightingOnLoad()}},
+            { src: 'plugin/zoom-js/zoom.js', async: true, condition: function(){return !!document.body.classList}},
+            /*{ src: 'plugin/remotes/remotes.js', async: true, condition: function condition() { return !!document.body.classList; } },*/
+        ]
+    });
+</script>
+
+</body>
+</html>
