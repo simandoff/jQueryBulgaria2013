@@ -50,5 +50,4 @@ wss.on('connection', function (ws) {
 	wss.clients.forEach(function (cs) {
 		ws.send(cs.data.json)
 	});
-
 });
